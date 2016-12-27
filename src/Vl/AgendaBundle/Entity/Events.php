@@ -35,9 +35,9 @@ class Events
     private $contenu;
 
     /**
-     * @var string
+     * @var \Vl\AgendaBundle\Entity\Images
      */
-    private $images;
+    private $image;
 
     /**
      * @var bool
@@ -165,12 +165,12 @@ class Events
     /**
      * Set images
      *
-     * @param string $images
+     * @param \Vl\AgendaBundle\Entity\Images $images
      * @return Events
      */
-    public function setImages($images = null)
+    public function setImage(\Vl\AgendaBundle\Entity\Images $image = null)
     {
-        $this->images = $images;
+        $this->image = $image;
 
         return $this;
     }
@@ -178,11 +178,11 @@ class Events
     /**
      * Get images
      *
-     * @return string 
+     * @return \Vl\AgendaBundle\Entity\Images
      */
-    public function getImages()
+    public function getImage()
     {
-        return $this->images;
+        return $this->image;
     }
 
     /**
@@ -303,5 +303,33 @@ class Events
     public function getColor()
     {
         return $this->color;
+    }
+    /**
+     * @var \Vl\AgendaBundle\Entity\Images
+     */
+    private $images;
+
+
+    /**
+     * Set images
+     *
+     * @param \Vl\AgendaBundle\Entity\Images $images
+     * @return Events
+     */
+    public function setImages(\Vl\AgendaBundle\Entity\Images $images = null)
+    {
+        $this->images = $images;
+
+        return $this;
+    }
+
+    /**
+     * Get images
+     *
+     * @return \Vl\AgendaBundle\Entity\Images 
+     */
+    public function getImages()
+    {
+        return $this->images;
     }
 }

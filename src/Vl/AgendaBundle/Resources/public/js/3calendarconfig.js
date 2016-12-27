@@ -57,19 +57,19 @@ $(document).ready(function() {
                         '</strong>'
                     );
                     if(event.salle == 'Salle de réunion')
-                        $(element).css("backgroundColor", "red")
+                        $(element).css("backgroundColor", "red");
                     if(event.salle == 'Restaurant du personnel')
-                        $(element).css("backgroundColor", "blue")
+                        $(element).css("backgroundColor", "blue");
                     if(event.salle == 'Cuisine Thérapeutique')
-                        $(element).css("backgroundColor", "green")
+                        $(element).css("backgroundColor", "green");
                     if(event.salle == 'Restaurant C.P.')
-                        $(element).css("backgroundColor", "orange")
+                        $(element).css("backgroundColor", "orange");
                     if(event.salle == 'Restaurant O.B.')
-                        $(element).css("backgroundColor", "yellow")
+                        $(element).css("backgroundColor", "yellow");
                     if(event.salle == 'CAJA')
-                        $(element).css("backgroundColor", "pink")
+                        $(element).css("backgroundColor", "pink");
                     if(event.salle == 'PASA')
-                        $(element).css("backgroundColor", "brown")
+                        $(element).css("backgroundColor", "brown");
 
                 }
                 if (!!event.voiture) {

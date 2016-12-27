@@ -2,7 +2,7 @@
 
 namespace Vl\AgendaBundle\Form;
 
-use VlAgendaBundle\Form\ImagesType;
+use Vl\AgendaBundle\Form\ImagesType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -28,9 +28,9 @@ class EventsType extends AbstractType
             ))
             ->add('titre')
             ->add('contenu', 'textarea')
-           // ->add('images', ImagesType::class, array(
-             //   'label' => 'Image de l\'évènement'
-            //))
+            ->add('images', ImagesType::class, array(
+                'label' => 'Image de l\'évènement'
+            ))
             ->add('addHomeActu', CheckboxType::class, array(
                 'required' => false
             ))

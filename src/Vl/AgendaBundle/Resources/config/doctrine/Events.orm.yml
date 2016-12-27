@@ -19,7 +19,7 @@ Vl\AgendaBundle\Entity\Events:
         contenu:
             type: string
             length: 255
-        images:
+        image:
             type: string
             length: 255
             nullable: true
@@ -41,4 +41,10 @@ Vl\AgendaBundle\Entity\Events:
         color:
             type: string
             nullable: true
+
+    manyToOne:
+        images:
+            targetEntity: Vl\AgendaBundle\Entity\Images
+            cascade: ["persist"]
+
     lifecycleCallbacks: {  }

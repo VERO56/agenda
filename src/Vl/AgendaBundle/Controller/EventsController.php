@@ -133,11 +133,11 @@ class EventsController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $event = $em->getRepository('VlAgendaBundle:Events')->findOneById($id);
-       // $img_evenement = $em->getRepository('VlAgendaBundle:Images')->findOneById($event->getImages()->getId());
+        $img_evenement = $em->getRepository('VlAgendaBundle:Images')->findOneById($event->getImages()->getId());
 
         if (!empty($event))
         {
-           // $em->remove($img_evenement);
+            $em->remove($img_evenement);
             $em->remove($event);
             $em->flush();
         }
