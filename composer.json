@@ -67,5 +67,5 @@
         "branch-alias": null
     },
     "target-dir": "VERO56/Bundle/AgendaBundle",
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
