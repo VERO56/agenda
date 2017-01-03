@@ -2,7 +2,18 @@
     "name": "apprenti/agenda",
     "license": "proprietary",
     "type": "project",
+    "description": "Symfony AgendaBundle",
+    "keywords": ["Agenda application", "xml", "json", "api", "web service"],
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Véronique Lejeune",
+            "email": "veronique.lejeune.56@gmail.com",
+            "homepage": "https://github.com/VERO56/agenda"
+        }
+    ],
     "autoload": {
+	"psr-0": { "VERO56\\Bundle\\AgendaBundle": "" },
         "psr-4": {
             "": "src/"
         },
@@ -13,6 +24,7 @@
     },
     "require": {
         "php": ">=5.3.9",
+        "symfony/framework-bundle": ">=2.1", "twig/twig": "*",
         "symfony/symfony": "2.8.*",
         "doctrine/orm": "^2.4.8",
         "doctrine/doctrine-bundle": "~1.4",
@@ -54,5 +66,7 @@
             "file": "app/config/parameters.yml"
         },
         "branch-alias": null
-    }
+    },
+    "target-dir": "VERO56/Bundle/AgendaBundle",
+    "minimum-stability": "dev"
 }
